@@ -19,3 +19,6 @@ app.post("/track-location", (req, res) => {
 app.get("/locations", (req, res) => res.json(locations));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.get("/", (req, res) => {
+  res.send("Location backend is running!");
+});
